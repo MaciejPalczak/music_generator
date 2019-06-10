@@ -14,12 +14,13 @@ public class Templates {
             "\t}\n" +
             "}";
 
-    private final static String pre1 ="\\relative c'' {\nc4 cis4 d4 dis4 e4 f4 fis4 g4 gis4 a4 ais4 b4 bis4 c4" ;
+    private final static String pre1 =" {\nc4 cis4 d4 dis4 e4 f4 fis4 g4 gis4 a4 ais4 b4 bis4 c4" ;
 
 
 
     private final static String post1="\n\\bar \"||\"\n" + "}";
-    private final static String pre2 ="\\relative c'' {\n" ;
+    private final static String pre2 ="\\relative c' \n{\n" ;
+    private final static String pre3 ="\n {\n\\transpose c'' " ;
     private final static String post2="\n\\bar \"||\"\n" + "}";
 
     public static String getPre1() {
@@ -36,5 +37,8 @@ public class Templates {
     }
     public static String getPost2() {
         return post2;
+    }
+    public static String getPre3() {
+        return pre3;
     }
 }
